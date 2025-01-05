@@ -1,0 +1,45 @@
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .footer-heading {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .footer-text {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .footer-text a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-text a:hover {
+    color: #007bff;
+  }
+  
+  .social-media-links {
+    margin-top: 1rem;
+  }
+  
+  .social-media-links .MuiIconButton-root {
+    margin: 0 8px;
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+      padding: 1rem 0;
+    }
+  }
+  
