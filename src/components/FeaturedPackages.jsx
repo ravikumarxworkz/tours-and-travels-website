@@ -5,7 +5,7 @@ function FeaturedPackages() {
   const [packages, setPackages] = useState([]);
 
   useEffect(() => {
-    fetch('/packages.json')
+    fetch(`${process.env.PUBLIC_URL}/packages.json`)
       .then((response) => response.json())
       .then((data) => setPackages(data));
   }, []);
@@ -15,7 +15,7 @@ function FeaturedPackages() {
   };
 
   return (
-    <Box sx={{ backgroundColor: "#f9f9f9", py: 8 }}>
+    <Box sx={{ backgroundColor: "#f8f9fa", py: 8 }}>
       <Typography variant="h4" gutterBottom textAlign="center" sx={{ mb: 4 }}>
         Tour Packages
       </Typography>
@@ -40,7 +40,7 @@ function FeaturedPackages() {
                 component="img"
                 alt={pkg.title}
                 height="200"
-                image={pkg.image}
+                image={`${process.env.PUBLIC_URL}/${pkg.image}`}
                 sx={{
                   objectFit: 'cover',
                   borderRadius: '12px 12px 0 0',

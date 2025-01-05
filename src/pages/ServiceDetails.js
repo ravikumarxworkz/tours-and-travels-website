@@ -10,16 +10,41 @@ import outstationTaxiImage from '../assets/outstation-taxi-service.jpg';
 function ServiceDetails() {
   const { serviceName } = useParams();
   const [details, setDetails] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/services.json')
-      .then(response => response.json())
-      .then(data => setDetails(data[serviceName]))
-      .catch(() => setDetails(null));
+    setLoading(true);
+    // Use the correct path with process.env.PUBLIC_URL
+    fetch(`${process.env.PUBLIC_URL}/services.json`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data[serviceName]) {
+          setDetails(data[serviceName]);
+        } else {
+          setError(`No data found for ${serviceName}`);
+        }
+      })
+      .catch(err => {
+        console.error('Error fetching data:', err);
+        setError(err.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, [serviceName]);
 
-  if (!details) {
-    return <Typography variant="h5">Service details not found!</Typography>;
+  if (loading) {
+    return <Typography variant="h5">Loading...</Typography>;
+  }
+
+  if (error || !details) {
+    return <Typography variant="h5">Error: {error || 'Service details not found!'}</Typography>;
   }
 
   // Define background image and table colors based on selected service

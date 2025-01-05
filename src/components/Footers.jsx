@@ -20,13 +20,16 @@ function Footer() {
   };
 
   return (
-    <footer className="footer" style={{ backgroundColor: '#000', color: '#fff', padding: '50px 20px' }}>
+    <footer className="footer">
       <Container maxWidth="lg">
         <Grid container spacing={6}>
           {/* Connect With Us */}
           <Grid item xs={12} sm={4}>
-            <Typography variant="h6" className="footer-heading" gutterBottom>
+            <Typography variant="h6" className="footer-heading">
               Connect With Us
+            </Typography>
+            <Typography variant="body2" className="footer-text" sx={{ mb: 2 }}>
+              Follow us on social media for travel inspiration, exclusive deals, and beautiful destinations!
             </Typography>
             <div className="social-media-links">
               <IconButton 
@@ -119,36 +122,62 @@ function Footer() {
 
           {/* More Inquiry */}
           <Grid item xs={12} sm={4}>
-            <Typography variant="h6" className="footer-heading" gutterBottom>
-              More Inquiry
+            <Typography variant="h6" className="footer-heading">
+              Plan Your Journey
             </Typography>
-            <Typography variant="body2" className="footer-text">
-              <strong>RSK Tours & Travels</strong>
+            <Typography variant="body2" className="footer-text" sx={{ mb: 3 }}>
+              Let us help you create unforgettable travel memories
             </Typography>
-            <Typography variant="body2" className="footer-text">
-              11/10, 21, Th Main Road, Siddeshwara Nagar, Govindaraja Nagar Ward, PF Layout, Vijayanagar,
-            </Typography>
-            <Typography variant="body2" className="footer-text">
-              Bengaluru, Karnataka 560040
-            </Typography>
-            <Typography variant="body2" className="footer-text">
-              <Phone /> +91-8123456789
-            </Typography>
-            <Typography variant="body2" className="footer-text">
-              <Email /> info@rsktravels.com
-            </Typography>
-          
+            <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+              <LocationOn sx={{ mr: 1, color: '#ff9800' }} />
+              <Typography variant="body2" className="footer-text">
+                11/10, 21, Th Main Road, Siddeshwara Nagar,<br />
+                Bengaluru, Karnataka 560040
+              </Typography>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+              <Phone sx={{ mr: 1, color: '#ff9800' }} />
+              <Typography variant="body2" className="footer-text">
+                +91-8123456789
+              </Typography>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <Email sx={{ mr: 1, color: '#ff9800' }} />
+              <Typography variant="body2" className="footer-text">
+                info@rsktravels.com
+              </Typography>
+            </Box>
           </Grid>
         </Grid>
 
         {/* Footer Bottom Line */}
-         {/* Footer Bottom Line */}
-         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px', borderTop: '1px solid #444', paddingTop: '10px' }}>
+        <Box sx={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center', 
+          marginTop: '40px', 
+          borderTop: '1px solid rgba(255,255,255,0.1)', 
+          paddingTop: '20px' 
+        }}>
           <Typography variant="body2" sx={{ color: '#aaa' }}>
             &copy; 2025 RSK Tours & Travels. All rights reserved.
           </Typography>
           <Typography variant="body2" sx={{ color: '#aaa' }}>
-            Designed by <Link href="https://ravikumarxworkz.github.io/" target="_blank" color="inherit" underline="hover">Ravikumar shankar kumbar</Link>
+            Designed by{' '}
+            <Link 
+              href="https://ravikumarxworkz.github.io/" 
+              target="_blank" 
+              sx={{ 
+                color: '#ff9800', 
+                textDecoration: 'none',
+                '&:hover': { 
+                  color: '#fff',
+                  textDecoration: 'underline' 
+                } 
+              }}
+            >
+              Ravikumar shankar kumbar
+            </Link>
           </Typography>
         </Box>
       </Container>

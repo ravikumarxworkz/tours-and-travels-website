@@ -1,4 +1,12 @@
 /* AppBar styling */
+:root {
+  --primary-color: #FF6B6B;
+  --secondary-color: #4ECDC4;
+  --text-dark: #333;
+  --text-light: #fff;
+  --background-light: #f8f9fa;
+  --transition-speed: 0.3s;
+}
 .appbar {
   background: linear-gradient(90deg, #3a6186, #89253e); /* Gradient for travel-themed header */
   color: white;
