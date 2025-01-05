@@ -29,14 +29,14 @@
   },
   {
     "title": "Bengaluru to Hyderabad City Tour",
-    "image": "/tour-images/hyderabad.jpg",
+    "image": "/tour-images/Hyderabad.jpg",
     "highlights": "Charminar, Ramoji Film City, iconic food",
     "places": ["Charminar", "Golconda Fort", "Ramoji Film City", "Hussain Sagar Lake"],
     "description": "Explore the cultural and historical richness of Hyderabad with its iconic landmarks and vibrant food scene."
   },
   {
     "title": "Bengaluru to Chennai Coastal Exploration",
-    "image": "/tour-images/chennai.png",
+    "image": "/tour-images/Chennai.png",
     "highlights": "Marina Beach, temples, local cuisine",
     "places": ["Marina Beach", "Kapaleeshwarar Temple", "Fort St. George", "Santhome Cathedral"],
     "description": "Experience the charm of Chennai with its beautiful coastline, cultural heritage, and delicious cuisine."
@@ -71,7 +71,7 @@
   },
   {
     "title": "Bengaluru to Pondicherry French Delight",
-    "image": "/tour-images/pondicherry.jpg",
+    "image": "/tour-images/Pondicherry.jpg",
     "highlights": "Colonial architecture, scenic beaches",
     "places": ["Rock Beach", "Auroville", "Promenade Beach", "French Quarter"],
     "description": "Dive into the French-inspired charm of Pondicherry with its scenic beaches, colonial architecture, and tranquil vibe."
