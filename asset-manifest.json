@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tours-and-travels-website/static/css/main.c9213b70.css",
+    "main.js": "/tours-and-travels-website/static/js/main.47679774.js",
+    "static/js/488.634be5f8.chunk.js": "/tours-and-travels-website/static/js/488.634be5f8.chunk.js",
+    "static/media/about-us-video.mp4": "/tours-and-travels-website/static/media/about-us-video.bfebca450bb07a2b424d.mp4",
+    "static/media/rskLogo.png": "/tours-and-travels-website/static/media/rskLogo.0bcd4c2281ca540540a4.png",
+    "static/media/airport.jpg": "/tours-and-travels-website/static/media/airport.d91bf85aa12450efdade.jpg",
+    "static/media/local-cab-image.jpg": "/tours-and-travels-website/static/media/local-cab-image.79a1854bb286b24f79cf.jpg",
+    "static/media/local-taxi-image.jpg": "/tours-and-travels-website/static/media/local-taxi-image.55ef939f4a96b9b9b534.jpg",
+    "static/media/outstation-taxi-service.jpg": "/tours-and-travels-website/static/media/outstation-taxi-service.e50150150954ce97ef06.jpg",
+    "static/media/sarah.avif": "/tours-and-travels-website/static/media/sarah.2cd57aa2e6c292cf9c07.avif",
+    "static/media/taxi-service-contact-us.webp": "/tours-and-travels-website/static/media/taxi-service-contact-us.825a477b407d10f9178f.webp",
+    "index.html": "/tours-and-travels-website/index.html",
+    "main.c9213b70.css.map": "/tours-and-travels-website/static/css/main.c9213b70.css.map",
+    "main.47679774.js.map": "/tours-and-travels-website/static/js/main.47679774.js.map",
+    "488.634be5f8.chunk.js.map": "/tours-and-travels-website/static/js/488.634be5f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9213b70.css",
+    "static/js/main.47679774.js"
+  ]
+}
